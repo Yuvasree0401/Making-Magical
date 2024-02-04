@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 5px 5px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
+    font-size: small;
+}
+.nav-link:hover{
+    text-shadow: 2px 2px 5px red;
+    border-bottom: 3px solid red;
+}
+
+/* Contact Us */
+#contact-heading{
+    text-align: center;
+    padding: 40px;
+    text-shadow: 2px 2px 3px blue; color:red;
+}
+#contact-heading a{
+    text-decoration: none;
+    color: black;
+}
+#contact-heading a:hover{
+    color: white;
+}
+
+/* Form */
+
+form{
+    height: auto;
+    width: 47.5%;
+    text-align: center;
+    margin-left: 25%;
+    margin-bottom: 2%;
+    padding-top: 2%;
+    background-image: url(Images/about2.jpg);
+    opacity: 0.5;
+    border-radius: 10px;
+}
+/* Content */
+#para1{
+    width: 100%;
+    margin: 2%;
+    display: grid;
+    gap: 20px;
+    font-weight: 500;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+#para{
+    height: auto;
+    width: 100%;
+    margin: 3%;
+    
+}
+@media only screen and (max-width:600px){
+    #para1{
+        grid-template-columns: 1fr 1fr;
+    }
+    form{
+        width:100%;
+        margin: 2%;
+    }
+}@media screen and (min-width:601px) and (max-width:1000px){
+    #para1{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+

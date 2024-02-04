@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    left: 0;
+    padding: 5px 5px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
+    font-size: small;
+}
+.nav-link:hover{
+    text-shadow: 2px 2px 5px red;
+    border-bottom: 3px solid red;
+}
+/* Body */
+#gallery{
+    text-align: center; 
+    padding-top: 40px;
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+ }
+.Img1{
+    height: 280px;
+    width: 200px;
+    position: relative;
+    margin-top: 10%;
+    margin-left: 40%;
+    transform-style: preserve-3d;
+    perspective: 3000px;
+    animation: round 20s linear infinite;
+}
+#I1{
+    width: 250px;
+    height: 150px;
+    position: absolute;
+}
+
+@keyframes round{
+   
+    from{
+        transform: rotatey(-180deg) rotateZ(10deg);
+    }
+    to{
+        transform: rotatey(180deg)rotateZ(10deg);
+    }
+   
+}
+#I1:nth-child(1){
+    transform: rotateY(60deg) translateZ(300px)
+}
+#I1:nth-child(2){
+    transform: rotateY(120deg) translateZ(300px)
+}
+#I1:nth-child(3){
+    transform: rotateY(180deg) translateZ(300px)
+}
+#I1:nth-child(4){
+    transform: rotateY(240deg) translateZ(300px)
+}
+#I1:nth-child(5){
+    transform: rotateY(300deg) translateZ(300px)
+}
+#I1:nth-child(6){
+    transform: rotateY(360deg) translateZ(300px)
+}
+
+#I1:hover{
+    width: 300px;
+    cursor: pointer;
+}
+@media only screen and (max-width:600px){
+    #I1{
+       width: 150px;
+        height: 100px;
+        position: absolute;
+    }
+    #I1:hover{
+        width: 200px;
+        height:200px;
+        cursor: pointer;
+    }
+    .Img1{
+        height: 100px;
+        margin-top: 200px;
+        perspective: 2000px;
+    }
+}
+@media screen and (min-width:601px) and (max-width:1000px){
+    #I1:hover{
+        width: 250px;
+        height: 150px;
+        cursor: pointer;
+    }
+    #I1{
+        width: 200px;
+        height: 170px;
+    } 
+    .Img1{
+        height: auto;
+        margin-top: 200px;
+        perspective: 2000px;
+    }
+}
+

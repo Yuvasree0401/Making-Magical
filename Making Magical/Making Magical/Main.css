@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, serif;
+}
+.navbar{
+    padding: 5px 5px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
+    font-size: small;
+}
+#navbar{
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
+.nav-link:hover{
+    text-shadow: 2px 2px 5px red;
+    border-bottom: 3px solid red;
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+ /* Home */
+.home{
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgba(0,0,0,.3), rgba(0,0,0,.4)),url(Images/homebg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.home h1{
+    font-size: 60px;
+    color: white;
+    letter-spacing: 3px;
+}
+@media only screen and (max-width:600px){
+    .home{
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+        
+    }
+}@media screen and (min-width:601px) and (max-width:1000px){
+    .home{ 
+        
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+@media screen and (min-width:1001px){
+    .home{
+      
+        text-align: center;
+        background-size: cover;
+        background-position: center;
+    }
+}
+/* Event */
+#Event-heading{
+    text-align: center;
+    padding: 20px;
+    text-shadow: 2px 2px 5px blue; color:red
+}
+#EV{
+    border-radius: 2px;
+    margin-left: 5%;
+    margin-top: 5%;
+    box-sizing: border-box;
+    display: grid;
+    gap:6%;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.image{
+    height: 100%;
+    width: 85%;
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.5);
+}
+.e1, .e2, .e3, .e4, .e5, .e6{
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 5%;
+    opacity: 0.7;
+    margin-top: 75%;
+    font-size: large;
+    transition: .5s ease;
+}
+@media only screen and (max-width:600px){
+    #EV{
+        margin-left: 20%;
+        grid-template-columns: 1fr; 
+    }
+    .image{
+        height: 100%;
+        width: 70%;
+    }
+}@media screen and (min-width:601px) and (max-width:1000px){
+    #EV{ 
+        margin-left: 10%;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+    .image{
+        height: 100%;
+        width: 90%;
+    }
+}
+.o1:hover .e1{
+   
+    transform: translatey(-30px);  
+
+}
+.o1{
+    background-image:url(Images/outdoor.jpg);
+    background-size: cover;
+    
+}
+.o2:hover .e2{
+   
+    transform: translate(0, -30px);  
+
+}
+.o2{
+    background-image: url(Images/birthday-party-decorators.jpg);
+    background-size: cover;
+}
+.o3:hover .e3{
+    
+    transform: translate(0, -30px);  
+
+}
+.o3{
+    background-image: url(Images/terrace.jpg);
+    background-size: cover;
+}
+.o4:hover .e4{
+    transform: translate(0, -30px);  
+
+}
+.o4{
+    background-image: url(Images/colorful-outdoor-party-decor.jpeg);
+    background-size: cover;
+}
+.o5:hover .e5{
+    transform: translate(0, -25px);  
+
+}
+.o5{
+    background-image: url(Images/indoor.jpg);
+    background-size: cover;
+}
+.o6:hover .e6{
+    transform: translatey(-30px);  
+
+}
+.o6{
+    background-image: url(Images/surprise.jpg);
+    background-size: cover;
+}
+
+/* About */
+#about{
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.7)),url(Images/about3.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.a1{
+
+    height:100vh;
+    width: 50%;
+    /* border: 2px solid; */
+    text-align: center;
+    color: white;
+    box-shadow: 0 6px 8px 0 rgba(0,0,0,0.8);
+    opacity: 0.5;
+}
+@media only screen and (max-width:600px){
+    .a1{
+        height: auto;
+        text-align: center;
+        
+        
+    }
+}@media screen and (min-width:601px) and (max-width:1000px){
+    .a1{ 
+        height: auto;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (min-width:1001px){
+    .a1{
+        height: auto;
+        text-align: center;
+       
+    }
+}
+
